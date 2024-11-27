@@ -56,3 +56,9 @@ Route::get('/dev/{nam?}', function ($name="Đinh Hiếu") {
 Route::get('/dvh-account',[DvhAccountController::class,'index'])->name('dvhAccount.index');
 
 Route::get('/dvh-account-create',[DvhAccountController::class,'create']);
+
+Route::get('/dvh-account-show',[DvhAccountController::class,'showData'])->name('dvh-account.show');
+
+Route::get('/dvh-account-list',[DvhAccountController::class,'list'])->name('dvh-account.list');
+
+Route::get('/dvh-account-getall',[DvhAccountController::class,'dvhgetaccount'])->name('dvh-account.getallaccount');
